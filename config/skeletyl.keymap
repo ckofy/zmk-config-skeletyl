@@ -29,6 +29,14 @@
 	};
   };
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -46,7 +54,7 @@
                 &kp TAB   &kp LGUI  &kp LC(E) &kp CAPS  &kp LC(B)      &kp PG_UP &kp HOME  &kp UP    &kp END   &kp DEL
                 &kp ESC   &kp LALT  &kp LSHFT &kp LCTRL &kp LC(S)      &kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC
                 &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &trans         &kp INS   &trans    &trans    &trans    &trans
-                                    &trans    &trans    &trans         &trans    &trans    &mo ADJ
+                                    &trans    &trans    &trans         &trans    &trans    &trans
             >;
         };
 
@@ -55,7 +63,7 @@
     &kp AMPS  &kp PRCNT &kp HASH   &kp LPAR  &kp EXCL                      &kp ASTRK &kp RPAR  &kp AT    &kp DLLR  &kp CARET
     &kp N7    &kp N5    &kp N3     &kp N1    &kp N9                        &kp N8    &kp N0    &kp N2    &kp N4    &kp N6
     &kp GRAVE &kp LBKT  &kp RBKT   &kp UNDER &kp EQUAL                     &kp PLUS  &kp MINUS &trans    &kp SQT   &kp BSLH
-                        &mo ADJ    &trans    &trans                        &trans    &trans    &trans
+                        &trans     &trans    &trans                        &trans    &trans    &trans
             >;
         };
 
