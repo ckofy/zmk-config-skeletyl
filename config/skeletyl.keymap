@@ -33,8 +33,8 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 
@@ -55,7 +55,7 @@
                 &kp W  &kp L   &kp Y  &kp P  &kp B                                  &kp Z  &kp F  &kp O     &kp U   &pht LGUI SEMI
                 &kp C  &kp R   &kp S  &kp T  &kp G                                  &kp M  &kp N  &kp E     &kp I   &kp A
           &pht LSHFT Q &kp J   &kp V  &kp D  &kp K                                  &kp X  &kp H  &kp COMMA &kp DOT &pht LALT FSLH
-                               &mo LWR &kp SPACE &kp LCTRL                     &kp RET &skq LSHFT &mo RSE
+                               &trans    &trans    &trans                     &trans    &trans    &trans
             >;
         };
 
